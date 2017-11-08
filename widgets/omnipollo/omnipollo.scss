@@ -1,21 +1,24 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color: #6dff9a;
-$value-color:       #fff;
+$background-color: #253126;
+$value-color: #fff;
 
-$title-color:       rgba(255, 255, 255, 0.7);;
-$moreinfo-color:    rgba(255, 255, 255, 0.7);;
+$title-color: rgba(255, 255, 255, 0.7);
+$moreinfo-color: rgba(255, 255, 255, 0.7);
 
 // ----------------------------------------------------------------------------
 // Widget-weather styles
 // ----------------------------------------------------------------------------
 
 .widget-omnipollo {
+  background-color: transparent;
 
-  background-color: $background-color;
-  
-  .title { 
+  img {
+    height: inherit;
+  }
+
+  .title {
     color: $title-color;
   }
 
@@ -24,7 +27,6 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);;
   }
 
   .updated-at {
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(90, 10, 255, 0.8);
   }
-  
 }
