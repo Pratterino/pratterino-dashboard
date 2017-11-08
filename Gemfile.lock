@@ -29,9 +29,12 @@ GEM
     http_parser.rb (0.6.0)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
+    mini_portile2 (2.1.0)
     multi_json (1.12.2)
     multipart-post (2.0.0)
     naught (1.1.0)
+    nokogiri (1.6.8.1)
+      mini_portile2 (~> 2.1.0)
     public_suffix (2.0.5)
     rack (1.5.5)
     rack-protection (1.5.3)
@@ -97,6 +100,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  nokogiri
   smashing
   twitter (>= 5.9.0)
   xml-simple
