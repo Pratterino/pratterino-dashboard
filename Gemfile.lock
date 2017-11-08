@@ -91,6 +91,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.4)
+    xml-simple (1.1.5)
 
 PLATFORMS
   ruby
@@ -98,6 +99,7 @@ PLATFORMS
 DEPENDENCIES
   smashing
   twitter (>= 5.9.0)
+  xml-simple
 
 BUNDLED WITH
    1.16.0
