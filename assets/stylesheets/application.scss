@@ -17,19 +17,33 @@ $background-danger-color-2: #ff9618;
 $text-danger-color: #fff;
 
 @-webkit-keyframes status-warning-background {
-  0%   { background-color: $background-warning-color-1; }
-  50%  { background-color: $background-warning-color-2; }
-  100% { background-color: $background-warning-color-1; }
+  0% {
+    background-color: $background-warning-color-1;
+  }
+  50% {
+    background-color: $background-warning-color-2;
+  }
+  100% {
+    background-color: $background-warning-color-1;
+  }
 }
+
 @-webkit-keyframes status-danger-background {
-  0%   { background-color: $background-danger-color-1; }
-  50%  { background-color: $background-danger-color-2; }
-  100% { background-color: $background-danger-color-1; }
+  0% {
+    background-color: $background-danger-color-1;
+  }
+  50% {
+    background-color: $background-danger-color-2;
+  }
+  100% {
+    background-color: $background-danger-color-1;
+  }
 }
-@mixin animation($animation-name, $duration, $function, $animation-iteration-count:""){
-  -webkit-animation:  $animation-name $duration $function #{$animation-iteration-count};
-  -moz-animation:     $animation-name $duration $function #{$animation-iteration-count};
-  -ms-animation:      $animation-name $duration $function #{$animation-iteration-count};
+
+@mixin animation($animation-name, $duration, $function, $animation-iteration-count:"") {
+  -webkit-animation: $animation-name $duration $function #{$animation-iteration-count};
+  -moz-animation: $animation-name $duration $function #{$animation-iteration-count};
+  -ms-animation: $animation-name $duration $function #{$animation-iteration-count};
 }
 
 // ----------------------------------------------------------------------------
@@ -91,18 +105,21 @@ h1, h2, h3, h4, h5, p {
   padding: 0;
   margin: 0;
 }
+
 h1 {
   margin-bottom: 12px;
   text-align: center;
   font-size: 30px;
   font-weight: 400;
 }
+
 h2 {
   text-transform: uppercase;
   font-size: 76px;
   font-weight: 700;
   color: $text-color;
 }
+
 h3 {
   font-size: 25px;
   font-weight: 600;
@@ -118,7 +135,7 @@ h3 {
 
 .icon-background {
   pointer-events: none;
-  width: 100%!important;
+  width: 100% !important;
   height: 100%;
   position: absolute;
   left: 0;
@@ -189,6 +206,8 @@ h3 {
 .updated-at {
   font-size: 15px;
   position: absolute;
+  color: rgba(0, 0, 0, 0.35);
+  text-shadow: -2px 2px rgba(255, 255, 255, 0.1);
   bottom: 12px;
   left: 0;
   right: 0;
@@ -234,25 +253,35 @@ h3 {
 }
 
 #lean_overlay {
-    position: fixed;
-    z-index:100;
-    top: 0px;
-    left: 0px;
-    height:100%;
-    width:100%;
-    background: #000;
-    display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: none;
 }
 
 #container {
   padding-top: 5px;
 }
 
-
 // ----------------------------------------------------------------------------
 // Clearfix
 // ----------------------------------------------------------------------------
-.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
-.clearfix:after { clear: both; }
-.clearfix { zoom: 1; }
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
 

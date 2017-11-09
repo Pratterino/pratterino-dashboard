@@ -15,18 +15,7 @@ $moreinfo-color: rgba(255, 255, 255, 0.7);
   background-color: transparent;
 
   img {
+    filter: saturate(0.1);
     height: inherit;
-  }
-
-  .title {
-    color: $title-color;
-  }
-
-  .artist, .name {
-    color: $value-color;
-  }
-
-  .updated-at {
-    color: rgba(90, 10, 255, 0.8);
   }
 }

@@ -7,13 +7,19 @@ def get_instagram_profile_media
   response = RestClient.get("https://www.instagram.com/#{username}/?__a=1")
 
   json = JSON.parse(response)
-  result = json['user']['media']['nodes'].map do |media|
-    "#{media}\n"
+  json['user']['media']['nodes'].each do |media, i|
+    result = {
+        :description => media['caption'] || '',
+        :url => media['thumbnail_src'],
+        :likes => media['likes']['count'],
+        :comments => media['comments']['count']
+    }
+    unless result.empty?
+      return result
+    end
   end
-
-  result.join("\n")
 end
 
-SCHEDULER.every '10m', :first_in => 0 do
-  send_event('instagram', {:url => get_instagram_profile_media})
+SCHEDULER.every '15m', :first_in => 0 do
+  send_event('instagram', {:instagram => get_instagram_profile_media})
 end

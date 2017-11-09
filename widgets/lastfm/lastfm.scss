@@ -11,20 +11,10 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);;
 // Widget-weather styles
 // ----------------------------------------------------------------------------
 
-.widget-lastfm { 
-
+.widget-lastfm {
   background-color: $background-color;
-  
-  .title { 
-    color: $title-color;
-  }
 
   .artist, .name {
     color: $value-color;
   }
-
-  .updated-at {
-    color: rgba(0, 0, 0, 0.3);
-  }
-  
 }

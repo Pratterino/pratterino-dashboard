@@ -1,11 +1,11 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color:  #9c4274;
-$value-color:       #fff;
+$background-color: #9c4274;
+$value-color: #fff;
 
-$title-color:       rgba(255, 255, 255, 0.7);;
-$moreinfo-color:    rgba(255, 255, 255, 0.7);;
+$title-color: rgba(255, 255, 255, 0.7);
+$moreinfo-color: rgba(255, 255, 255, 0.7);
 
 // ----------------------------------------------------------------------------
 // Widget-weather styles
@@ -13,12 +13,48 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);;
 
 .widget-instagram {
   background-color: $background-color;
-  
-  .title { 
-    color: $title-color;
+  height: inherit;
+  display: table-cell;
+
+  .fa-instagram {
+    position: absolute;
+    opacity: .4;
+    top: 5px;
+    left: 5px;
   }
 
-  .updated-at {
-    color: rgba(0, 0, 0, 0.3);
+  .instagram__pic {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .instagram-info {
+    top: 0;
+    position: absolute;
+    height: inherit;
+    width: inherit;
+
+    .instagram-info__desc {
+      width: inherit;
+      text-align: center;
+      font-size: 10pt;
+      position: absolute;
+      bottom: 5px;
+
+      p {
+        font-kerning: normal;
+      }
+
+      ul {
+        li {
+          margin: 0 4px;
+          display: inline-block;
+        }
+      }
+    }
   }
 }

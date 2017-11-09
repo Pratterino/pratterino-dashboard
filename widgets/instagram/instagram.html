@@ -1,4 +1,15 @@
-<h1 class="title" data-bind="title"></h1>
 <p class="status" data-bind="status"></p>
 
-<p class="updated-at" data-bind="updatedAtMessage"></p>
+<div class="instagram__pic"></div>
+
+<div class="instagram-info">
+    <div class="instagram-info__desc">
+        <p data-bind="instagram.description"></p>
+        <ul>
+            <li><i class="fa fa-heart"></i> <span data-bind="instagram.likes"></span></li>
+            <li><i class="fa fa-comment"></i> <span data-bind="instagram.comments"></span></li>
+        </ul>
+    </div>
+</div>
+
+<i class="fa fa-instagram"></i>
