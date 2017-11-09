@@ -1,6 +1,9 @@
-class Dashing.Omnipollo extends Dashing.Widget
+#= require moment.min.js
 
+class Dashing.Omnipollo extends Dashing.Widget
   onData: (data) ->
-    # Handle incoming data
-    # You can access the html node of this widget with `@node`
-    # $(@node).fadeOut().fadeIn()
+    updated = data.updated.split('Last updated:')[1] || ''
+    date = moment(updated, ' hh:mm dddd MMMM Do YYYY');
+    date.locale('sv')
+
+    @set("update_time", date.format('hh:mm'))
