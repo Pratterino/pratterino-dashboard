@@ -2,19 +2,23 @@ require 'open-uri'
 require 'nokogiri'
 
 def get_omnipollo_beercam_url
-  html = open('http://www.omnipolloshatt.com/')
-  doc = Nokogiri::HTML(html)
+  begin
+    html = open('http://www.omnipolloshatt.com/')
+    doc = Nokogiri::HTML(html)
 
-  doc.xpath("//div[@class='front-block']").each {|div|
-    img = div.xpath('./img/@src').to_s
+    doc.xpath("//div[@class='front-block']").each {|div|
+      img = div.xpath('./img/@src').to_s
 
-    if img.include? 'beercam'
-      return {
-          :url => img,
-          :updated => div.xpath('./p/text()').to_s
-      }
-    end
-  }
+      if img.include? 'beercam'
+        return {
+            :url => img,
+            :updated => div.xpath('./p/text()').to_s
+        }
+      end
+    }
+  rescue
+    print('Getting Omnipollo site failed.')
+  end
 end
 
 SCHEDULER.every '10m', :first_in => 0 do

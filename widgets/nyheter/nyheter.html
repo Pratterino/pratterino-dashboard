@@ -1,0 +1,9 @@
+<p class="status" data-bind="status"></p>
+
+<marquee direction="up">
+    <div class="news-item" data-foreach-nyhet="nyheter">
+        <p data-bind="nyhet['title']"></p>
+    </div>
+</marquee>
+
+<p class="updated-at" data-bind="updatedAtMessage"></p>
