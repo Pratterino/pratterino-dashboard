@@ -10,6 +10,5 @@ def get_omnipollo_beercam_url
 end
 
 SCHEDULER.every '10m', :first_in => 0 do
-  print(get_omnipollo_beercam_url)
   send_event('omnipollo', {:url => get_omnipollo_beercam_url})
 end
