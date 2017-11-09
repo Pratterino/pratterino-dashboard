@@ -15,6 +15,5 @@ def get_instagram_profile_media
 end
 
 SCHEDULER.every '10m', :first_in => 0 do
-  print(get_instagram_profile_media)
-  send_event('sl', {:url => get_instagram_profile_media})
+  send_event('instagram', {:url => get_instagram_profile_media})
 end
