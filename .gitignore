@@ -3,6 +3,6 @@ history.yml
 /.bundle/
 /vendor/
 /.idea/
-/secret/settings.yml
+/secret/*
 
 /node_modules/
