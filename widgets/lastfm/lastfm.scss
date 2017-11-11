@@ -5,9 +5,7 @@ $background-color: #9c4274;
 $value-color: #fff;
 
 $title-color: rgba(255, 255, 255, 0.7);
-;
 $moreinfo-color: rgba(255, 255, 255, 0.7);
-;
 
 // ----------------------------------------------------------------------------
 // Widget-weather styles
@@ -25,6 +23,7 @@ $moreinfo-color: rgba(255, 255, 255, 0.7);
     position: absolute;
     background-position: center;
     background-size: cover;
+
     .lastfm-info {
       position: absolute;
       bottom: 20px;
