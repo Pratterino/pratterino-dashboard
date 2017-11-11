@@ -1,5 +1,8 @@
 *DS_STORE
 history.yml
+/.bundle/
+/vendor/
 /.idea/
-/secret/
+/secret/settings.yml
+
 /node_modules/
