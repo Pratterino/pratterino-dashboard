@@ -1,11 +1,13 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color:  #9c4274;
-$value-color:       #fff;
+$background-color: #9c4274;
+$value-color: #fff;
 
-$title-color:       rgba(255, 255, 255, 0.7);;
-$moreinfo-color:    rgba(255, 255, 255, 0.7);;
+$title-color: rgba(255, 255, 255, 0.7);
+;
+$moreinfo-color: rgba(255, 255, 255, 0.7);
+;
 
 // ----------------------------------------------------------------------------
 // Widget-weather styles
@@ -13,6 +15,21 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);;
 
 .widget-lastfm {
   background-color: $background-color;
+  display: table;
+  height: inherit;
+
+  .lastfm-bg {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    .lastfm-info {
+      position: absolute;
+      bottom: 20px;
+    }
+  }
 
   .artist, .name {
     color: $value-color;
