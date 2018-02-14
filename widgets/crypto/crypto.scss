@@ -1,0 +1,12 @@
+$background-color: #9c4274;
+$value-color: #ffc;
+
+.widget-crypto {
+  background: $background-color;
+
+  .change-rate {
+    font-weight: 500;
+    font-size: 30px;
+    color: $value-color;
+  }
+}
