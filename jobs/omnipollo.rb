@@ -21,6 +21,7 @@ def get_omnipollo_beercam_url
   end
 end
 
+
 SCHEDULER.every '10m', :first_in => 0 do
   omni = get_omnipollo_beercam_url
   unless omni.nil?

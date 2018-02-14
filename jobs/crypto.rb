@@ -5,7 +5,7 @@ def get_crypto_prices
   response = RestClient.get("https://api.coinmarketcap.com/v1/ticker/?convert=SEK&limit=10")
   json = JSON.parse(response)
 
-  json.each do |crypto|
+  json[0].each do |crypto|
     result = {
         :name => crypto['name'],
         :symbol => crypto['symbol'],
