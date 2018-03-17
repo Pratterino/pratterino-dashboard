@@ -32,7 +32,8 @@ $moreinfo-color: rgba(255, 255, 255, 0.7);
     }
   }
 
-  .artist, .name {
+  .artist, .track, .name {
+    text-transform: uppercase;
     color: $value-color;
   }
 }

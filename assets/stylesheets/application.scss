@@ -59,11 +59,11 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  background: linear-gradient(#eecef1, #e4e2f9);
 }
 
 body {
   margin: 0;
-  background-color: $background-color;
   font-size: 20px;
   color: $text-color;
   font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -210,7 +210,9 @@ h3 {
 }
 
 .updated-at {
-  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
   position: absolute;
   color: rgba(0, 0, 0, 0.35);
   text-shadow: -2px 2px rgba(255, 255, 255, 0.1);
@@ -270,6 +272,7 @@ h3 {
 }
 
 #container {
+  background: #f7f7f7 !important;
   padding-top: 5px;
 }
 
