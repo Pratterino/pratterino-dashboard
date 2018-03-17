@@ -2,12 +2,11 @@
     $(function () {
         // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
         Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":2,"size_y":2},{"col":3,"row":2,"size_x":1,"size_y":1},{"col":3,"row":1,"size_x":1,"size_y":1},{"col":4,"row":1,"size_x":1,"size_y":1},{"col":4,"row":2,"size_x":1,"size_y":1}]')
-        Dashing.widget_base_dimensions = [340, 340];
+        Dashing.widget_base_dimensions = [360, 360];
     });
 </script>
 
-<% content_for :title do %>Pär dashboard
-<% end %>
+<% content_for :title do %>Pär dashboard<% end %>
 
 <div class="gridster">
   <ul>
@@ -20,8 +19,9 @@
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="GoogleCalendar" data-view="GoogleCalendar"></div>
+      <div data-id="klimato" data-view="Klimato"></div>
     </li>
+
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="crypto" data-view="Crypto"></div>
