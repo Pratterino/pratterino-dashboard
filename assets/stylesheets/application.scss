@@ -137,6 +137,18 @@ h3 {
 // ----------------------------------------------------------------------------
 // Base widget styles
 // ----------------------------------------------------------------------------
+.long-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    display: block;
+  .long {
+    height: 40px;
+  }
+}
+
 .gridster {
   margin: 0px auto;
 }

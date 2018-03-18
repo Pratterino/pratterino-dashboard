@@ -1,9 +1,10 @@
 <p class="status" data-bind="status"></p>
 
-<marquee direction="up" scrollamount="2" height="360px">
-    <div class="news-item" data-foreach-nyhet="nyheter">
-        <p data-bind="nyhet['title']"></p>
-    </div>
-</marquee>
+<div class="news-item" data-foreach-nyhet="nyheter">
+    <p data-bind="nyhet['title'] | append '|'"></p>
+</div>
+
+<canvas id="MyCanvas1" width="300" height="200"></canvas>
+
 
 <p class="updated-at" data-bind="updatedAtMessage"></p>

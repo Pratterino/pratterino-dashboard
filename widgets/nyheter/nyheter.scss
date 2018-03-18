@@ -1,8 +1,8 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color: #faf5dd;
-$value-color: #384a39;
+$background-color: #b14ad1;
+$value-color: #fff;
 
 $title-color: rgba(255, 255, 255, 0.7);
 $moreinfo-color: rgba(255, 255, 255, 0.7);
@@ -12,15 +12,10 @@ $moreinfo-color: rgba(255, 255, 255, 0.7);
 // ----------------------------------------------------------------------------
 
 .widget-nyheter {
-  background-color: $background-color;
-  padding: 10px;
+  background: $background-color;
 
   .news-item {
-    margin: 20px 0;
-
-    p {
-      color: $value-color;
-      font-size: 12pt;
-    }
+    display: inline-block;
+    color: $value-color;
   }
 }
