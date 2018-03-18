@@ -59,7 +59,7 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  background: linear-gradient(#eecef1, #e4e2f9);
+  background: linear-gradient(45deg, #eecef1, #e4e2f9);
   width: 100vw;
   height: 100vh;
 }
@@ -168,6 +168,23 @@ h3 {
   cursor: pointer;
 }
 
+li {
+  overflow: hidden;
+}
+
+.corner {
+  $corner_width: 60px;
+
+  background: $widget_color_2;
+  display: block;
+  position: absolute;
+  top: -$corner_width/2;
+  right: -$corner_width/2;
+  width: $corner_width;
+  height: $corner_width;
+  transform: rotate(45deg);
+}
+
 .widget {
   text-align: center;
   width: inherit;
@@ -216,8 +233,8 @@ h3 {
   letter-spacing: 1px;
   font-size: 10px;
   position: absolute;
-  color: rgba(0, 0, 0, 0.35);
-  text-shadow: -2px 2px rgba(255, 255, 255, 0.1);
+  color: rgba(244, 156, 203, 0.35);
+  text-shadow: -1px 1px rgba(255, 255, 255, 0.1);
   bottom: 12px;
   left: 0;
   right: 0;
@@ -274,10 +291,11 @@ h3 {
 }
 
 #container {
-  background: rgba(247, 247, 247, 0.5);
+  background: rgba(247, 247, 247, 0.9);
   margin: 20px;
-  padding: 5px;
+  padding: 10px;
   overflow: hidden;
+  box-shadow: rgba(75, 75, 75, .5) 0 5px 60px;
   width: -webkit-fill-available;
 }
 
